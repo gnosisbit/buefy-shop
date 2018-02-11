@@ -30,7 +30,8 @@ module.exports = {
     analyze: ANALYZE,
     vendor: [
       'buefy',
-      'firebase'
+      'firebase',
+      'axios'
     ]
   },
   /*

@@ -5,6 +5,10 @@
   "author": "nRV <contact@styro.fr>",
   "private": true,
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/14nrv/buefy-shop.git"
+  },
   "scripts": {
     "dev": "NODE_ENV=development nuxt",
     "build": "NODE_ENV=production nuxt build",
@@ -25,6 +29,7 @@
   "dependencies": {
     "@nuxtjs/dotenv": "^1.1.0",
     "@nuxtjs/pwa": "^2.0.5",
+    "axios": "^0.17.1",
     "buefy": "^0.6.2",
     "bulma-steps": "^0.1.9",
     "bulma-switch": "^0.1.2",
@@ -34,11 +39,14 @@
     "pug": "^2.0.0-rc.4",
     "stylus": "^0.54.5",
     "vue-server-renderer": "2.5.13",
+    "vue-stripe-elements-plus": "^0.2.7",
     "vue-template-compiler": "2.5.13",
     "vuexfire": "^2.3.0"
   },
   "devDependencies": {
+    "@babel/polyfill": "^7.0.0-beta.38",
     "babel-eslint": "^8.2.1",
+    "babel-preset-env": "^1.6.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",

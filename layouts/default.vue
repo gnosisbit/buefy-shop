@@ -6,7 +6,7 @@
       nuxt
     .hero-footer
       .container
-        p Made with love from Paris
+        p Made with ❤︎ from Paris
     </nav>
 </template>
 

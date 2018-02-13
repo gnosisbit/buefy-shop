@@ -31,8 +31,7 @@ module.exports = {
     vendor: [
       'buefy',
       'firebase',
-      'axios',
-      'vue-stripe-elements-plus'
+      'axios'
     ]
   },
   /*

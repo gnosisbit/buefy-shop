@@ -10,7 +10,8 @@ const {
 } = process.env
 
 const modules = [
-  '@nuxtjs/pwa'
+  '@nuxtjs/pwa',
+  '@nuxtjs/axios'
 ]
 const isNotProdEnv = NODE_ENV !== 'production'
 isNotProdEnv && modules.push('@nuxtjs/dotenv')
@@ -30,8 +31,7 @@ module.exports = {
     analyze: ANALYZE,
     vendor: [
       'buefy',
-      'firebase',
-      'axios'
+      'firebase'
     ]
   },
   /*

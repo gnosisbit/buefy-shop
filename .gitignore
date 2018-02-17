@@ -1,14 +1,15 @@
 # dependencies
-node_modules
+**/**/node_modules
 
 # logs
 *.log
 
 # Nuxt build
-.nuxt
+**/.nuxt
+.firebaserc
 
 # Nuxt generate
-dist
+**/dist
 
 # Intellij idea
 .idea
@@ -18,9 +19,9 @@ dist
 .vscode
 
 # Generated files
-static/manifest*.json
-static/sw.js
-static/workbox-sw*.js
+**/static/manifest*.json
+**/static/sw.js
+**/static/workbox-sw*.js
 
 coverage
-.env
+**/.env

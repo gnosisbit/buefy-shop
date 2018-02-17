@@ -32,7 +32,10 @@ module.exports = {
     vendor: [
       'buefy',
       'firebase'
-    ]
+    ],
+    babel: {
+      presets: ['es2015', 'stage-0', 'stage-2']
+    }
   },
   /*
   ** Headers

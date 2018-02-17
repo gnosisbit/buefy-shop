@@ -34,6 +34,7 @@ jobs:
             ./cc-test-reporter before-build
             cd src
             yarn test --coverage --ci --testResultsProcessor="./node_modules/jest-junit"
+            cd ..
             ./cc-test-reporter after-build --exit-code $?
           environment:
             JEST_JUNIT_OUTPUT: "src/coverage/junit/js-test-results.xml"

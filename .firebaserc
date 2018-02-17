@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "buefy-shop",
+    "staging": "buefy-shop-staging"
+  }
+}

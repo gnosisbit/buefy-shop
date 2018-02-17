@@ -19,7 +19,9 @@ module.exports = {
   /*
   ** Build configuration
   */
+  buildDir: '../prod/server/nuxt',
   build: {
+    publicPath: '/assets/',
     postcss: [// will fix bulma warning about column
       require('postcss-cssnext')({
         features: {

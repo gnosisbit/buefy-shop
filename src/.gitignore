@@ -1,0 +1,17 @@
+# logs
+*.log
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
+
+# Generated files
+static/manifest*.json
+static/sw.js
+static/workbox-sw*.js
+
+coverage
+
+node_modules

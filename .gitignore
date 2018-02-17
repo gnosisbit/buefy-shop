@@ -1,27 +1,9 @@
-# dependencies
-**/**/node_modules
-
-# logs
-*.log
-
-# Nuxt build
-**/.nuxt
 .firebaserc
 
-# Nuxt generate
-**/dist
+**/node_modules
 
-# Intellij idea
 .idea
 *iml
-
-# VSCode
 .vscode
 
-# Generated files
-**/static/manifest*.json
-**/static/sw.js
-**/static/workbox-sw*.js
-
-coverage
 **/.env

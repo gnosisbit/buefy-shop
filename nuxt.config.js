@@ -33,8 +33,8 @@ module.exports = {
       'buefy',
       'firebase'
     ],
-    extend(config, { dev }) {
-      if (!dev) {
+    extend(config, { isDev }) {
+      if (!isDev) {
         const BabiliPlugin = require('babili-webpack-plugin')
         config.plugins = config.plugins.filter((plugin) => plugin.constructor.name !== 'UglifyJsPlugin')
         config.plugins.push(new BabiliPlugin())

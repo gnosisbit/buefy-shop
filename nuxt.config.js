@@ -32,7 +32,14 @@ module.exports = {
     vendor: [
       'buefy',
       'firebase'
-    ]
+    ],
+    extend(config, { dev }) {
+      if (!dev) {
+        const BabiliPlugin = require('babili-webpack-plugin')
+        config.plugins = config.plugins.filter((plugin) => plugin.constructor.name !== 'UglifyJsPlugin')
+        config.plugins.push(new BabiliPlugin())
+      }
+    }
   },
   /*
   ** Headers

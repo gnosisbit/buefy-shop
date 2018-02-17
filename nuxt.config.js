@@ -35,9 +35,9 @@ module.exports = {
     ],
     extend(config, { isDev }) {
       if (!isDev) {
-        const BabiliPlugin = require('babili-webpack-plugin')
+        const UglifyJSWebpackPlugin = require('uglifyjs-webpack-plugin')
         config.plugins = config.plugins.filter((plugin) => plugin.constructor.name !== 'UglifyJsPlugin')
-        config.plugins.push(new BabiliPlugin())
+        config.plugins.push(new UglifyJSWebpackPlugin())
       }
     }
   },

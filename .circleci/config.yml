@@ -52,6 +52,9 @@ jobs:
           name: Install firebase-tools globally with yarn
           command: yarn global add firebase-tools
       - run:
+          name: Install all dependencies
+          command: yarn install
+      - run:
           name: Deploy if tests pass and branch is Master
           command: |
             export PATH="$PATH:$HOME/.config/yarn/global/node_modules/.bin"
@@ -67,6 +70,9 @@ jobs:
       - run:
           name: Install firebase-tools globally with yarn
           command: yarn global add firebase-tools
+      - run:
+          name: Install all dependencies
+          command: yarn install
       - run:
           name: Deploy if tests pass and branch start with dev-
           command: |
